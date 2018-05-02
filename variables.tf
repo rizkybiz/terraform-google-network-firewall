@@ -1,5 +1,15 @@
 variable name {
-  description = "A unique name for the resource, required by GCE"
+  description = "A unique name for the rule, required by GCE"
+}
+
+variable description {
+  description = "Description for the rule"
+  default = ""
+}
+
+variable priority {
+  description = "Priority of the rule: ranges from 0-65535. Lower numbers have higher priority."
+  default     = "1000"
 }
 
 variable network {
@@ -18,4 +28,10 @@ variable ports {
 variable source_ranges {
   description = "A list of source CIDR ranges that this firewall applies to. Can't be used for EGRESS"
   type        = "list"
+}
+
+variable target_tags {
+  description = "A list of target tags"
+  type        = "list"
+  default     = []
 }
