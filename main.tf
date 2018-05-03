@@ -1,5 +1,5 @@
 resource "google_compute_firewall" "new-firewall" {
-  name    = "${var.network}-firewall-${var.name}"
+  name    = "${var.name}"
   description = "${var.description}"
   network = "${var.network}"
   priority = "${var.priority}"
