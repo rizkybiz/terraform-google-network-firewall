@@ -2,7 +2,7 @@ resource "google_compute_firewall" "new-firewall" {
   name    = "${var.network}-firewall-${var.name}"
   description = "${var.description}"
   network = "${var.network}"
-  priority = "${priority}"
+  priority = "${var.priority}"
 
   allow {
     protocol = "${var.protocol}"
