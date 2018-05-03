@@ -29,9 +29,3 @@ variable source_ranges {
   description = "A list of source CIDR ranges that this firewall applies to. Can't be used for EGRESS"
   type        = "list"
 }
-
-variable target_tags {
-  description = "A list of target tags"
-  type        = "list"
-  default     = []
-}

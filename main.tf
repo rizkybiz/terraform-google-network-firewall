@@ -9,6 +9,5 @@ resource "google_compute_firewall" "new-firewall" {
     ports    = "${var.ports}"
   }
 
-  target_tags   = "${var.target_tags}"
   source_ranges = "${var.source_ranges}"
 }
