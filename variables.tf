@@ -22,10 +22,10 @@ variable protocol {
 
 variable ports {
   description = "List of ports and/or port ranges to allow. This can only be specified if the protocol is TCP or UDP"
-  type        = "list"
+  type        = list
 }
 
 variable source_ranges {
   description = "A list of source CIDR ranges that this firewall applies to. Can't be used for EGRESS"
-  type        = "list"
+  type        = list
 }
